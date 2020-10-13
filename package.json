@@ -2,6 +2,7 @@
   "name": "contact_manager",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://WilliamChavula.github.io/contactmanagerapp",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -9,6 +10,7 @@
     "axios": "^0.20.0",
     "bootstrap": "^4.5.2",
     "classnames": "^2.2.6",
+    "gh-pages": "^3.1.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -17,6 +19,7 @@
     "uuidv4": "^6.2.4"
   },
   "scripts": {
+    "deploy": "yarn build && gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
